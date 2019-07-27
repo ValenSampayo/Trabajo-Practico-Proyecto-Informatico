@@ -37,19 +37,7 @@ let 7 ="--...";
 let 8 ="---..";
 let 9 ="----.";
 //Simbolos//
-let . = ".-.-.-";
-let , = "--..--";
-let : = "---...";
-let ´ = ".----.";
-let - = "-....-";
-let / = "-..-.";
-let ( = "-..-.";
-let ) = "-.--.-";
-let " = ".-..-.";
-let = ="-...-";
-let traduccion = document.getElementById('trad');
-function traduction(){
-  if (trad.charAt(0) == a ){
-
-  }
+function myfunction(){
+ t= document.getElementById("trad").innerhtml;
+document.getElementById("traduccion").innerhtml = t ;
 }
