@@ -2,17 +2,21 @@
 <head>
  <meta charset="utf-8">
  <link rel="stylesheet" href="styles.css">
- <script src="script.js"></script>
+ <script src"script.js"></script>
  <title>Sampayo Traductor de codigo Morse</title>
 </head>
 <body>
-  <form>
-    <label for="ascii">Introduzca texto para traducirlo a código Morse:</label><br>
-    <textarea id="demo" name="ascii"> </textarea> <br>
-    <button onclick="myfunction()">Traducir</button>
-  </form>
-    <p id=traduccion></p>
-
+    Introduzca texto para traducirlo a código Morse:<br>
+    <input type="text" id="myText" value=""></input> <br>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+<script>
+function myFunction() {
+  let a =".-";
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 <footer> Alumno: Sampayo Valentín Division: 4° 1° <a href="https://github.com/ValenSampayo/Trabajo-Practico-Proyecto-Informatico">Repositorio</a>
 </body>
 </html>

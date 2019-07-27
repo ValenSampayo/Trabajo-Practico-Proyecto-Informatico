@@ -36,8 +36,10 @@ let 6 ="-....";
 let 7 ="--...";
 let 8 ="---..";
 let 9 ="----.";
-//Simbolos//
-function myfunction(){
- t= document.getElementById("trad").innerhtml;
-document.getElementById("traduccion").innerhtml = t ;
+//Funcion//
+function myfunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
 }
+}
+</script>
