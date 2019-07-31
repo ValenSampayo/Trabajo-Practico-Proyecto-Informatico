@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="script.js"></script>
 <title>Sampayo Traductor</title>
 </head>
 <body>
@@ -24,23 +25,5 @@ el que le permitió construir una línea telegráfica entre Baltimore y Washingt
 resultando éstas bastante exitosas lo que dio pie a la formación de una enorme compañía que cubriría a todos los Estados Unidos de 
 líneas telegráficas.</p>
 	<footer>Alumno: Sampayo Valentín Curso: 4° 1° Computación <a href="https://github.com/ValenSampayo/Trabajo-Practico-Proyecto-Informatico">Repositorio de GitHub</a>
-    <script>
-        function convert(){
-            var letters = [ ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ];
-            var morseLetters = [ " / ", ". -", "- . . .", "- . - .", "- . .", ".", ". . - .", "- - .", ". . . .", ". .", ". - - -", "- . -", ". - . .",  "- -", "- .", "- - -", ". - - .", "- - . -", ". - .", ". . .", "-", ". . -", ". . . -", ". - -", "- . . -", "- . - -", "- - . .", ". - - - -", ". . - - -", ". . . - -", ". . . . -", ". . . . .", "- . . . .", "- - . . .", "- - - . .", "- - - - .", "- - - - -" ];            
-            var textToChange = document.getElementById("textToConvert").value;
-            var newText = "";
-            for (var i = 0; i < textToChange.length; i++) {
-                for (var j = 0; j < 37; j++) {
-                    if (textToChange[i].toLowerCase() == letters[j]) {
-                        newText += morseLetters[j];
-                        newText += "\xa0\xa0\xa0";
-                        break;
-                    }		
-                }
-            }
-        document.getElementById("newText").innerHTML = newText;
-        }
-    </script>
 </body>
 </html>
