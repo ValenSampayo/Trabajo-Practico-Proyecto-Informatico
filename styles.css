@@ -1,5 +1,6 @@
 footer{
-	margin-top: 50px;
+	margin-top: 195px;
+	text-align:center;
 }
 .atraducir{
 	font-family:sans-serif;
@@ -12,4 +13,7 @@ p{
 #newText{
 	color:rgb(55, 255, 0);
 	background-color:grey;
+}
+.Texp{
+	text-align:center;
 }
