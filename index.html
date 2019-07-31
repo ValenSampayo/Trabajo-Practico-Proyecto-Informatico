@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<title>Sampayo Traductor</title>
+</head>
+<body>
+    <h1 class="atraducir">Introduzca el texto que desea traducir debajo</h1><br>
+	<input type="text" id="textToConvert">
+    <button onclick="convert()">Convert</button>
+    <p>Texto traducido a Morse: </p>
+    <p id="newText"></p>
+	<h1><strong>¿Que es el código Morse?</strong></h1>
+	<h3><strong>Código morse</strong></h3>
+<p>El código Morse es un código o sistema de comunicación que permite la comunicación telegráfica a través de la transmisión de impulsos 
+eléctricos de longitudes diversas o por medios visuales, como luz, sonoros o mecánicos. Este código consta de una serie de puntos,
+rayas y espacios, que al ser combinados entre si pueden formar palabras, números y otros símbolos.</p> <br>
+
+<p>Este sistema de comunicación fue creado en el año 1830 por Samuel F.B. Morse, un inventor, pintor y físico proveniente de los Estados Unidos,
+quien pretendía encontrar un medio de comunicación telegráfica. La creación de éste código tiene su origen en la creación del señor Morse
+de un telégrafo, invento que le trajo bastante dificultades, ya que, en un principio, el registro de este fabuloso invento le fue negado 
+tanto en Europa como en los Estados Unidos. Finalmente, logró conseguir el financiamiento del gobierno americano, 
+el que le permitió construir una línea telegráfica entre Baltimore y Washington. Un año después se realizaron las primeras transmisiones,
+resultando éstas bastante exitosas lo que dio pie a la formación de una enorme compañía que cubriría a todos los Estados Unidos de 
+líneas telegráficas.</p>
+	<footer>Alumno: Sampayo Valentín Curso: 4° 1° Computación <a href="https://github.com/ValenSampayo/Trabajo-Practico-Proyecto-Informatico">Repositorio de GitHub</a>
+    <script>
+        function convert(){
+            var letters = [ ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ];
+            var morseLetters = [ " / ", ". -", "- . . .", "- . - .", "- . .", ".", ". . - .", "- - .", ". . . .", ". .", ". - - -", "- . -", ". - . .",  "- -", "- .", "- - -", ". - - .", "- - . -", ". - .", ". . .", "-", ". . -", ". . . -", ". - -", "- . . -", "- . - -", "- - . .", ". - - - -", ". . - - -", ". . . - -", ". . . . -", ". . . . .", "- . . . .", "- - . . .", "- - - . .", "- - - - .", "- - - - -" ];            
+            var textToChange = document.getElementById("textToConvert").value;
+            var newText = "";
+            for (var i = 0; i < textToChange.length; i++) {
+                for (var j = 0; j < 37; j++) {
+                    if (textToChange[i].toLowerCase() == letters[j]) {
+                        newText += morseLetters[j];
+                        newText += "\xa0\xa0\xa0";
+                        break;
+                    }		
+                }
+            }
+        document.getElementById("newText").innerHTML = newText;
+        }
+    </script>
+</body>
+</html>

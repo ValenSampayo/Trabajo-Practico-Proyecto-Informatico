@@ -1,10 +1,15 @@
-body {
-  font-family: serif;
-  font-size: 20px;
+footer{
+	margin-top: 50px;
 }
-footer {
-  margin-top: 475px;
+.atraducir{
+	font-family:sans-serif;
+	font-size:25px;
 }
-.traduccion{
-  background-color: gray;
+p{
+	font-family:sans-serif;
+	font-size:15px;
+}
+#newText{
+	color:rgb(55, 255, 0);
+	background-color:grey;
 }
