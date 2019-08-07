@@ -1,6 +1,5 @@
-footer{
-	margin-top: 195px;
-	text-align:center;
+body {
+	background-color: rgb(164, 135, 255);
 }
 .atraducir{
 	font-family:sans-serif;
@@ -10,10 +9,25 @@ p{
 	font-family:sans-serif;
 	font-size:15px;
 }
-#newText{
-	color:rgb(55, 255, 0);
-	background-color:grey;
-}
 .Texp{
 	text-align:center;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.footer{
+	background-color: green;
+	width:500px;
+	margin-left: 400px;
+	margin-top: 175px;
+	text-align:center;
+}
+.info{
+	background-color: rgb(204, 255, 169);
+}
+#newText{
+	background-color: rgb(156, 255, 182);
+	width:400px;
+	text-align: center;
 }
